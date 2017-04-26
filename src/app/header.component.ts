@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'header-component',
@@ -62,6 +62,7 @@ import {Component} from '@angular/core';
         <li><a href="#">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><weather-component></weather-component></li>
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
