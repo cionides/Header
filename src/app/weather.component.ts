@@ -6,7 +6,12 @@ import { Weather } from './weather.interface';
   selector: 'weather-component',
   template: `
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <div class="navbar-header" *ngIf="weather">
+  <style>
+  #weather{
+    color: #9d9d9d
+  }
+  </style>
+  <div id="weather" class="navbar-header" *ngIf="weather">
     {{ weather.location.name}},
     {{ weather.location.region}}
     {{ weather.current.temp_f}} F
