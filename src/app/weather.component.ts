@@ -7,15 +7,17 @@ import { Weather } from './weather.interface';
   template: `
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
-  #weather{
-    color: #9d9d9d
-  }
+    #weather{
+      color: #9d9d9d
+    }
   </style>
-  <div id="weather" class="navbar-header" *ngIf="weather">
-    {{ weather.location.name}},
-    {{ weather.location.region}}
-    {{ weather.current.temp_f}} F
-    {{ weather.current.condition.text}}
+  <div  class="navbar-header" *ngIf="weather">
+    <div id="weather">
+      {{ weather.location.name}},
+      {{ weather.location.region}}
+      {{ weather.current.temp_f}} °F
+      {{ weather.current.condition.text}}
+    </div>
     <img src="{{weather.current.condition.icon}}">
   </div>
   `,
