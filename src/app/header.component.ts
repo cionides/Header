@@ -26,13 +26,6 @@ import { Component } from '@angular/core';
       height: 100%;
     }
     
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: #333A56;
-      color: #E8E8E8;
-      padding: 15px;
-    }
-    
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -57,13 +50,12 @@ import { Component } from '@angular/core';
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Contacts</a></li>
+        <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">About</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><weather-component></weather-component></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
