@@ -16,7 +16,7 @@ import { Weather } from './weather.interface';
     <div id="weather">
       {{ weather.location.name}}
       {{ weather.current.temp_f}} °F
-      </br>
+      <br>
       {{ weather.current.condition.text}}
     </div>
   </div>
