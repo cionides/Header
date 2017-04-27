@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherService } from './weather.service';
-import { Weather } from './weather.interface';
+import { CurrentWeather } from './current-weather.interface';
+import { Forecast } from './forecast.interface';
+
 
 @Component({
   selector: 'weather-component',
@@ -11,29 +13,44 @@ import { Weather } from './weather.interface';
       color: #9d9d9d
     }
   </style>
-  <div *ngIf="weather">
-   <img src="{{weather.current.condition.icon}}">
+  <div *ngIf="currentWeather">
+   <img src="{{currentWeather.current.condition.icon}}">
   </div>
-  <div  class="navbar-header" *ngIf="weather">
+  <div  class="navbar-header" *ngIf="currentWeather">
     <div id="weather">
-      {{ weather.location.name }}
-      {{ weather.current.temp_f }} °F
-      <br>
-      {{ weather.current.condition.text}}
+      {{ currentWeather.location.name }}
+      {{ currentWeather.current.temp_f }} °F
+      {{ currentWeather.current.condition.text}}
+    </div>
+    <div  *ngIf="forecast">
+      {{ forecast | json }}
     </div>
   </div>
   `,
 })
 
 export class WeatherComponent implements OnInit {
-  weather: Weather;
+  currentWeather: CurrentWeather;
+  forecast: Forecast;
 
   constructor(private weatherService: WeatherService) {}
  
  ngOnInit() {
+   this.getCurrentWeather();
+   this.getForecast();
+
+ }
+
+ getCurrentWeather() {
    this.weatherService
-    .getWeather()
-    .subscribe((data: Weather) => this.weather = data);
+    .getCurrentWeather()
+    .subscribe((data: CurrentWeather) => this.currentWeather = data);
+ }
+
+ getForecast() {
+  this.weatherService
+    .getForecast()
+    .subscribe((data: Forecast) => this.forecast = data);
  }
 
 }
