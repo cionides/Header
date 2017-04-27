@@ -11,11 +11,13 @@ import { Weather } from './weather.interface';
       color: #9d9d9d
     }
   </style>
+  <div *ngIf="weather">
+   <img src="{{weather.current.condition.icon}}">
+  </div>
   <div  class="navbar-header" *ngIf="weather">
-  <img src="{{weather.current.condition.icon}}">
     <div id="weather">
-      {{ weather.location.name}}
-      {{ weather.current.temp_f}} °F
+      {{ weather.location.name }}
+      {{ weather.current.temp_f }} °F
       <br>
       {{ weather.current.condition.text}}
     </div>
