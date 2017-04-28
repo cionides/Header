@@ -23,7 +23,8 @@ import { Forecast } from './forecast.interface';
       {{ currentWeather.current.condition.text}}
     </div>
     <div  *ngIf="forecast">
-      {{ forecast | json }}
+     <img src="{{forecast.forecast.forecastday.day.icon}}">
+      {{ forecast.forecast.forecastday.day.condition.text }}
     </div>
   </div>
   `,
