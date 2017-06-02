@@ -1,1 +1,187 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar{
+background-color: #1e0056;
+width: 100%;
+height: 130px;
+
+}
+.header-logo{
+    display: table-row;
+    float: left;
+    width:100px;
+}
+.logo{
+    height:auto;
+    max-width: 110px;
+    min-width: 95px;
+    width:15vw;
+}
+.div-logo{
+    width:15%;
+    height:auto;
+}
+
+
+.school-name{
+    text-align: center;
+    color:#f4d442;
+    font-family: Brush Script Std, Brush Script MT, cursive;
+    font-size: 3vw;
+    margin: 15px 0px 0px 3vw;
+
+}
+.school-name-xs{
+    /*text-align: center;
+    margin: 40px 5vw 0 6vw;
+    color:#f4d442;
+    font-family: Brush Script Std, Brush Script MT, cursive;
+    font-size: 2vw;*/
+}
+
+
+.item-invisible {
+    clip:rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow:hidden;
+    position: absolute !important;
+}
+.search-form-control{
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px 0px 0px 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.075) inset;
+    color: #555;
+    display: block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 1.42875;
+    padding:  6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width:85%;
+    display: table-row;
+    float: right;
+}
+.navbar_utility{
+    display: inline-block;
+    position: absolute;
+    width: 35%;
+    right: 35px;
+    top:10px;
+}
+.nav-items{
+    display:flex; 
+    float:right; 
+    padding-top:10px;
+    height: 50%;
+}
+.nav-search{
+    margin: 0px;
+    float: right;
+}
+.btn-nav-search-xs{
+float: left;
+border-radius: 0px 0px 0px 0px;
+}
+.nav-search-xs{
+margin: 0px;
+float: left;
+width:90%;
+}
+.btn-default{
+    background: #dbbc32 none repeat scroll 0 0;
+    border: medium hidden;
+    color:#fff;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    height: 10%;
+    font-family: "Times New Roman";
+    text-align: center;
+}
+
+.btn-default:hover{
+    background-color: #474634;
+    color: #fff;
+    font-family: "Times New Roman";
+}
+.nav li a:hover{
+    background-color: #474634;
+}
+
+.btn-search{
+    border-radius: 0px 4px 4px 0px;
+    height: 36px;
+    float: right;
+}
+
+.btn-nav-items{
+    margin: 15px 5px 5px 5px;
+}
+
+.btn-carriages-status{
+    background: #007c00 none repeat scroll 0 0;
+    color: #fff;
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+}
+.btn-carriages-status-xs{
+    border-radius: 0;
+    text-align: center;
+    width: 100%;
+
+}
+.btn-contact-xs{
+    border-radius: 0px 0px 0px 0px;
+    text-align: center;
+    width:100%;
+}
+.div-box-float-left{
+ float: left; 
+ display: table-cell;
+}
+.navbar-toggle{
+    background-color: #f4d442;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px 4px 4px 4px;
+    border: 0px;
+    margin: 35px 0vw 0vw 0vw;
+}
+.navbar-nav-xs{
+    margin: 0px 0px 0px 0px;
+}
+
+.icon-bar{
+    background-color: #000;
+}
+.navbar-toggle:hover{
+    background-color: #c6aa2d;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px 4px 4px 4px;
+
+}
+.navbar-collapse{
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+.header-side-xs{
+  position: relative;
+height:auto;
+width:200px;
+top: 0px;
+float: right;
+margin-top: 0px;
+}
+.btn-menu-xs{
+  position: absolute;
+  margin: 12vw 10px 0px 0px;
+  right: 0px;
+}
+.weather-main-xs{
+  position: absolute;
+  margin: 2vw 10px 0px 0px;
+  right: 0px;
+}

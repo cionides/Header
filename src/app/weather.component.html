@@ -1,0 +1,27 @@
+<div id="parent" class="nav-items">
+    <!--<div>-->
+        <div style="display: table;" *ngIf="forecast">
+            <div style="display: table-row; float: left;">
+                <div class="div-box-float-left">
+                    <img src="{{forecast.current.condition.icon}}">
+                </div>
+                <div style="float: left; display: table-cell;">
+                    <div id="weather">
+                        {{ forecast.location.name }} {{ forecast.current.temp_f}} °F
+                        <br> {{ forecast.current.condition.text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--</div>-->
+    <!--<div id="narrow" style="width:100px;">
+        <div style="float: right; width: 100%; display: table;" *ngIf="forecast">
+            <div style="display: table-row; float: right;">
+                <button class="weather-btn" type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Forecast</button>
+                <div style="color: white;" id="demo" class="collapse">
+                    Tomorrow {{ forecast.forecast.forecastday[0].day.avgtemp_f}} °F
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
