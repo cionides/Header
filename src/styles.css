@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.backgroundcolor{
+background-color: #1e0056;
+width: 100%;
+height: auto;
+}
+
 .navbar{
 background-color: #1e0056;
 width: 100%;
@@ -6,7 +12,7 @@ height: auto;
 /*max-height: 150px;
 min-height: 100px;*/
 
-padding: 0 0 35px 0;
+padding: 0 0 15px 0;
 margin-bottom: 0;
 border: 0;
 }
@@ -55,7 +61,7 @@ width:100%;
     border: 1px solid #000;
     border-radius: 4px 4px 4px 4px;
     border: 0px;
-    margin: 35px 10px 0vw 0vw;
+    margin: 0px 10px 0vw 0vw;
 }
 .navbar-toggle:hover{
     background-color: #c6aa2d !important;
@@ -64,10 +70,12 @@ width:100%;
     border-radius: 4px 4px 4px 4px;
 }
 
+.navbar-brand{
+    padding: 5px 5px 5px 5px;
+}
+
 .navbar-header{
     margin-bottom: 35px;
-
-
 }
 
 .navbar-header-button-xs{
@@ -78,7 +86,9 @@ width:100%;
 .navbar-header-xs{
     margin-bottom: 0px 0px 0px 0px;
     padding-bottom: 0px;
-    bottom: 0px;
+    /*top:0px;*/
+    /*vertical-align: top;*/
+    /*bottom: 0px;*/
 
 
 }
@@ -199,8 +209,8 @@ width:100%;
 .nav-items{
     display:flex; 
     float:right; 
-    padding-top:10px;
     height: 50%;
+    padding-top: 10px;
 }
 .nav-search{
     margin: 0px;
@@ -362,3 +372,7 @@ margin-top: 0px;
     float: right;
 }
 
+.clearwhite{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
