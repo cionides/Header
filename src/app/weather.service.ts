@@ -11,9 +11,9 @@ export class WeatherService {
   constructor (
     private http: Http
   ) {}
-
+// 2aa63eed74ee4cacaf4161938171906
   getForecast(): Observable<Forecast> {
-    return this.http.get(`https://api.apixu.com/v1/forecast.json?key=a7af6a59fa2a4b559ca132906172404&q=Chicago`)
+    return this.http.get(`https://api.apixu.com/v1/forecast.json?key=2aa63eed74ee4cacaf4161938171906&q=Chicago`)
     .map((res:Response) => res.json());
   }
 
